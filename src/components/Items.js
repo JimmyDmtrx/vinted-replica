@@ -109,7 +109,7 @@ const Items = ({ search, sort }) => {
                   {offer.owner.account?.avatar?.url ? (
                     <img src={offer.owner.account.avatar.url} alt="user" />
                   ) : (
-                    <img src="./assets/img/user.jpeg" alt="default user" />
+                    <img src="./user.jpeg" alt="default user" />
                   )}
                 </div>
                 <span>{offer.owner.account.username}</span>
