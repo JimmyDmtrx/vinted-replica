@@ -58,11 +58,13 @@ const Product = () => {
               {data.product_description}
             </span>
             <div className="product-user-identity">
-              {data.owner.account.hasOwnProperty("avatar") && (
+              {data.owner.account.hasOwnProperty("avatar") ? (
                 <div className="product-user-avatar">
                   <img src={data.owner.account.avatar.secure_url} alt="" />
                 </div>
-              )}
+              ):(<div className="product-user-avatar">
+                <img src="../user.jpeg" alt="default user" /> 
+                </div>)}
               <span>{data.owner.account.username}</span>
             </div>
           </div>
